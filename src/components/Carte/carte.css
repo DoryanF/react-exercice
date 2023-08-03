@@ -1,0 +1,32 @@
+.carte {
+    width: 25%;
+    background: rgb(184, 184, 184);
+    border: 0.5em solid black;
+    margin: 1em;
+}
+
+.carteBody {
+    display: flex;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    padding: 0.5em;
+    border-bottom: 0.2em solid black;
+}
+
+img {
+    width: 35%;
+    height: 100%;
+}
+
+.cartedesc {
+    width: 65%;
+}
+
+.desc {
+    padding: 1em;
+}
