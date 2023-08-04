@@ -1,10 +1,8 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
-import Carte from './components/Carte/Carte';
 import Footer from './components/Footer/Footer';
-import SuperHero from './models/SuperHeros';
-import HeroList from './pages/heroList/HeroList';
+import Routeur from './routeur/Routeur';
 
 
 
@@ -13,7 +11,7 @@ function App() {
   return (
     <>
       <Header/>
-      <HeroList/>
+        <Routeur/>
       <Footer/>
     </>
   );

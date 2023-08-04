@@ -1,7 +1,7 @@
 import React from 'react'
 import './carte.css'
 import SuperHero from '../../models/SuperHeros'
-// import { heros } from '../../models/Heros'
+import { Link } from 'react-router-dom'
 
 type Heros = {
   heros: SuperHero,
@@ -12,6 +12,7 @@ type Heros = {
 
 const Carte: React.FC<Heros> = ({heros}) => {
   return (
+    <Link to={`/${heros.id}`}>
       <div className='carte'>
         <h2>{heros.name}</h2>
         <div className='carteBody'>
@@ -23,8 +24,8 @@ const Carte: React.FC<Heros> = ({heros}) => {
             <p className='desc'>Age: {heros.age} ans</p>
             <p className='desc'>Ville: {heros.ville}</p>
         </div>
-
-    </div>
+      </div>
+    </Link>
     
   )
 }
