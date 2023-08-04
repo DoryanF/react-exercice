@@ -1,10 +1,8 @@
 import React from 'react'
 import { RouteObject, useRoutes } from 'react-router-dom';
 import HeroList from '../pages/heroList/HeroList';
-import Carte from '../components/Carte/Carte';
-import { heros } from '../models/Heros';
-import TestUseParams from '../components/testUseParams/TestUseParams';
 import HeroDetails from '../pages/heroList/HeroDetails';
+import FormulaireAjout from '../formulaireAjout/FormulaireAjout';
 
 const Routeur = () => {
     const routes : RouteObject[] = [
@@ -15,6 +13,10 @@ const Routeur = () => {
         {
             path: "/:id",
             element: <HeroDetails/>
+        },
+        {
+          path: "/ajout",
+          element: <FormulaireAjout />
         }
     ]
 

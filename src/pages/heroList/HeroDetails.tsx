@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import SuperHero from '../../models/SuperHeros'
 import { useParams } from 'react-router-dom'
-import { heros } from '../../models/Heros'
-import { Link } from 'react-router-dom'
+import { servicesHeros } from '../../services/ServicesHeros'
 
 const HeroDetails = () => {
     const [hero, setHero] = useState<SuperHero>();
@@ -12,14 +11,19 @@ const HeroDetails = () => {
     useEffect(() => {
         if(id)
         {
-            heros.forEach((her) => {
-                if (her.id === +id)
-                {
-                    setHero(her);
-                }
-            })
+            getHeroById(id)
         }
-    })
+    }, [])
+
+    const getHeroById = (id: string) => {
+        servicesHeros.getHero(id)
+        .then((data) => setHero(data))
+        .catch((error) => console.error(error))
+    }
+
+
+
+
   return (
     <div className='carte'>
         <h2>{hero?.name}</h2>

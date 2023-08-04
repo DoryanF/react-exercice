@@ -2,15 +2,19 @@ import React, { useEffect, useState } from 'react'
 import { heros } from '../../models/Heros';
 import SuperHero from '../../models/SuperHeros';
 import Carte from '../../components/Carte/Carte';
-import { useParams, Link } from 'react-router-dom'
+import { servicesHeros } from '../../services/ServicesHeros';
 
 const HeroList = () => {
     const [heroes, setHeros] = useState<SuperHero[]>([]);
 
     useEffect(() => {
-        setHeros(heros);
+        getAllHeros()
     }, [])
 
+    const getAllHeros = () => {
+        servicesHeros.getAllHeros()
+        .then((data) => setHeros(data))
+    }
 
   return (
         <div>

@@ -1,0 +1,39 @@
+{
+  "heros": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "image": "https://www.superherodb.com/gallery2/075/395/39568.webp",
+      "civil": "Bruce Wayne",
+      "age": 35,
+      "ville": "Gothan City"
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "image": "https://www.superherodb.com/gallery2/075/475/47594.webp",
+      "civil": "Clark Kent",
+      "age": 28,
+      "ville": "Metropolis"
+    },
+    {
+      "id": 3,
+      "name": "Green Lantern",
+      "image": "https://www.superherodb.com/gallery2/075/181/18105.webp",
+      "civil": "Hal Jordan",
+      "age": 30,
+      "ville": "Coast City"
+    },
+    {
+      "id": 4,
+      "name": "Spiderman",
+      "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTMLB6BUI1EGUl1i0OCzY4lwRwSC7NVnxG7t6YNLDfYC0Yto7Y7%26s&sp=1691152729Ta6368068c948ec7e4278c96b0e77ad01357de196db5f2467893b1a1e411f10d2",
+      "civil": "Peter Parker",
+      "age": "20",
+      "ville": "New York",
+      "nom": "d",
+      "img": "a",
+      "immage": "d"
+    }
+  ]
+}
