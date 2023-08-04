@@ -1,4 +1,6 @@
-export const heros = [
+import SuperHero from "./SuperHeros";
+
+export const heros: SuperHero[] = [
     {
         id: 1,
         name: "Batman",

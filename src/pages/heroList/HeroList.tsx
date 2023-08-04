@@ -1,19 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import { heros } from '../../models/Heros';
+import SuperHero from '../../models/SuperHeros';
+import Carte from '../../components/Carte/Carte';
 
 const HeroList = () => {
-    const [hero, setHero] = useState([]);
+    const [heroes, setHeros] = useState<SuperHero[]>([]);
 
     useEffect(() => {
-        heros.map(her => {
-            console.log(her);
-        })
-    })
+        setHeros(heros);
+    }, [])
 
 
   return (
-    <div>HeroList</div>
-  )
+        <div>
+            {heroes.map((hero) => (
+                <Carte key={hero.id} heros={hero}/>
+            ))}    
+        </div>
+    )
+    
+  
 }
 
 export default HeroList
